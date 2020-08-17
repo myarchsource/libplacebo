@@ -1,0 +1,19 @@
+# Optional components
+option('vulkan', type: 'feature', value: 'auto',
+       description: 'Vulkan-based renderer')
+
+option('glslang', type: 'feature', value: 'auto',
+       description: 'glslang SPIR-V compiler')
+
+option('shaderc', type: 'feature', value: 'auto',
+       description: 'libshaderc SPIR-V compiler')
+
+option('lcms', type: 'feature', value: 'auto',
+       description: 'LittleCMS 2 support')
+
+# Miscellaneous
+option('tests', type: 'boolean', value: false,
+       description: 'Enable building the test cases')
+
+option('bench', type: 'boolean', value: false,
+       description: 'Enable building benchmarks (`meson test benchmark`)')
